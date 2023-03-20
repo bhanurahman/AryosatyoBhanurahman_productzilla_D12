@@ -1,0 +1,19 @@
+class Kendaraan {
+    nyalakanKlakson(){
+        console.log('tiinn!!');
+    }
+}
+
+class Mobil extends Kendaraan {}
+class Motor extends Mobil {}
+class Sepeda extends Kendaraan {}
+
+const kendaraan = new Kendaraan();
+const motor = new Motor();
+const mobil = new Mobil();
+const sepeda = new Sepeda();
+
+kendaraan.nyalakanKlakson();
+motor.nyalakanKlakson();
+mobil.nyalakanKlakson();
+sepeda.nyalakanKlakson();

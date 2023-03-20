@@ -1,0 +1,31 @@
+class Mobil {
+    merk;
+    cc;
+    harga;
+    setMerk(merk){
+        this.merk = merk
+    }
+    setCC(cc){
+        this.cc = cc
+    }
+    setHarga(harga) {
+        this.harga = harga
+    }
+    getMerk(){
+        return this.merk;
+    }
+    getCC(){
+        return this.cc;
+    }
+    getHarga(){
+        return this.harga;
+    }
+}
+
+const m = new Mobil();
+m.setMerk('Suzuki');
+m.setCC(1500);
+m.setHarga(160000000);
+console.log('Merk',m.getMerk());
+console.log('Merk',m.getCC());
+console.log('Harga',m.getHarga());
